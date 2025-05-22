@@ -1,3 +1,9 @@
+
+const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+
 const containers = document.querySelectorAll(".textContainer");
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!@#$%^&*\t ";
 const shuffleTimes = 10;
@@ -57,11 +63,12 @@ timeline.to("#loading-text",{
   }
 })
 
-window.onscroll = () => {
-  const scrollY = window.scrollY;
+// Assuming you already initialized locoScroll
+scroll.on('scroll', (args) => {
+  const scrollY = args.scroll.y; // This is Locomotive's actual scroll position
   const windowHeight = window.innerHeight;
   const nav = document.querySelector("nav");
-  console.log("fire");
+
   if (!nav) return;
 
   if (scrollY > windowHeight) {
@@ -79,7 +86,8 @@ window.onscroll = () => {
     });
     nav.classList.replace("text-black", "text-white");
   }
-};
+});
+
 
 
 document.querySelectorAll('.section').forEach(section => {
@@ -258,8 +266,7 @@ document.querySelectorAll('.hover-section').forEach(section => {
 
 document.querySelectorAll('.buy-text').forEach(section => {
   const arrow = section.querySelector('i.ri-arrow-right-line');
-  console.log(arrow)
-
+  
   gsap.set(arrow, { rotate: 0, transformOrigin: "center center" });
   gsap.set(section, { scale: 1, transformOrigin: "center" });
 

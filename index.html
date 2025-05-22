@@ -39,34 +39,34 @@
     <nav class="fixed h-20 w-full z-30 flex text-white">
       <h3 class="nav-title absolute text-3xl left-10 top-3">Locomotive®</h3>
       <div class="nav-middle flex items-center absolute left-[55%] top-3 text-3xl tracker-tighter">
-        <h3 class="hover:underline">Work,</h3>
-        <h3 class="hover:underline">Agency,</h3>
-        <h3 class="hover:underline">Careers,</h3>
-        <h3 class="hover:underline">Store</h3>
+        <h3 class="hover:underline cursor-pointer">Work,</h3>
+        <h3 class="hover:underline cursor-pointer">Agency,</h3>
+        <h3 class="hover:underline cursor-pointer">Careers,</h3>
+        <h3 class="hover:underline cursor-pointer">Store</h3>
       </div>
-      <h3 class="absolute top-3 right-20 text-3xl">Let's talk</h3>
+      <h3 class="absolute top-3 right-20 text-3xl cursor-pointer hover:underline ">Let's talk</h3>
     </nav>
     <div data-scroll-container>
     <div class="page1 relative h-screen w-full bg-black overflow-hidden">
       <video class="absolute" autoplay muted loop playsinline src="./public/video/c7567b65-e5d0b1c7.mp4"></video>
       <span class="absolute z-30 bottom-28 left-10 text-7xl text-white"><span aria-hidden="true" class="mr-10">🔶</span>Locomotive®</span>
-      <span class="absolute z-30 bottom-8 left-10 text-7xl text-white">
+      <span  class="absolute z-30 bottom-8 left-10 text-7xl text-white">
         Digital-first Design Agency
         <span aria-hidden="true">🍺🔞</span>
       </span>
     </div>
 
-    <div data-scroll data-scroll-speed="1.5" class="page2 relative h-[130vh] w-full bg-white text-black">
-      <h4 class="text-black text-3xl absolute left-[35%] top-[26%]">Six Years</h4>
-      <h4 class="text-3xl absolute top-3 right-32">©2008-2025</h4>
-      <h4 class="text-3xl absolute left-[26%] top-[33%]">Running</h4>
-      <h4 class="text-2xl absolute right-[26%] top-[50%]">2018-2023</h4>
-      <div id="canvas-container" class="absolute h-[90vh] w-[30vw] bg-black left-[35%] top-[30%] overflow-hidden">
+    <div data-scroll data-scroll-speed="2" class="page2 relative h-[100vh] w-full bg-white text-black">
+      <h4 class="text-black text-3xl absolute left-[35%] top-[4%]">Six Years</h4>
+      <h4 class="text-3xl absolute -top-[10%] right-32">©2008-2025</h4>
+      <h4 class="text-3xl absolute left-[26%] top-[13%]">Running</h4>
+      <h4 class="text-2xl absolute right-[26%] top-[30%]">2018-2023</h4>
+      <div id="canvas-container" class="absolute h-[90vh] w-[30vw] bg-black left-[35%] top-[10%] overflow-hidden">
         <video autoplay muted loop playsinline class="w-full h-full " src="./public/video/ring.mp4"></video>
       </div>
       
       <div class="line bg-black w-[300px] h-[2px] absolute bottom-[20%] right-[13%]"></div>
-      <div class="text absolute bottom-[15%] right-[13%] flex items-center justify-between w-[300px]">
+      <div class="text absolute bottom-[15%] right-[13%] flex items-center justify-between w-[300px] buy-text cursor-pointer">
         <h2 class="text-3xl text-animate">The dynasty</h2>
         <i class="ri-arrow-right-line text-2xl hover:ri-arrow-right-up-line"></i>
       </div>
@@ -121,13 +121,13 @@
         From strategy to deployment and maintenance, we're the ultimate digital one-stop shop. Over the past 15 years, Locomotive® has become a go-to for meaningful, innovative, results-driven digital experiences, web design and branding. Freshness guaranteed.
       </h3>
       <div class="line bg-black w-[300px] h-[2px] absolute bottom-[-85%] right-[30%]"></div>
-      <div class="text absolute bottom-[-95%] right-[30%] flex items-center justify-between w-[300px]">
+      <div class="text absolute bottom-[-95%] right-[30%] flex items-center justify-between w-[300px]  buy-text cursor-pointer">
         <h3 class="text-3xl text-animate hover:underline">Agency</h3>
         <i class="ri-arrow-right-line text-2xl"></i>
       </div>
       <div class="line bg-black w-[300px] h-[2px] absolute bottom-[-100%] right-[30%]"></div>
-      <div class="text absolute bottom-[-110%] right-[30%] flex items-center justify-between w-[300px]">
-        <h3 class="text-3xl text-animate hover:underline">Careers</h3>
+      <div class="text absolute bottom-[-110%] right-[30%] flex items-center justify-between w-[300px] buy-text cursor-pointer ">
+        <h3 class="text-3xl text-animate hover:underline ">Careers</h3>
         <i class="ri-arrow-right-line text-2xl"></i>
       </div>
       <h3 class="text-black text-2xl absolute bottom-[-125%] left-[15%]">Always looking</h3>
@@ -246,12 +246,6 @@
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-     <script>
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true
-    });
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
 
