@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Atlassian Sans';
+    src: url('./public/font/AtlassianSans-latin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('./public/font/HelveticaNowDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Locomotive New';
+    src: url('./public/font/PPLocomotiveNew-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+  position: static;
+}
+nav{
+    font-family: 'Helvetica Now Display' ;
+}
+
+.loding-text {
+    font-family:'Atlassian Sans' ;
+}
+.page1{
+    font-family: 'PP Locomotive New' ;
+}
+.page2 h4{
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+}
+.page3{
+    font-family: 'PP Locomotive New';
+}
+.page3 .title{
+    font-family: 'Helvetica Now Display';
+}
+.page4{
+    font-family: 'PP Locomotive New';
+}
+.page4 h3 {
+    font-family: 'Helvetica Now Display';
+}
+.page5 .header{
+    font-family: 'PP Locomotive New';
+}
+.page6{
+    font-family: 'Helvetica Now Display';
+}
+.page7{
+    font-family: 'PP Locomotive New';
+}
+ .buy-text i {
+      @apply inline-block origin-center; /* Tailwind classes for display and transform-origin */
+    }
